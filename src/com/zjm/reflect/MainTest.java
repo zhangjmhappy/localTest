@@ -1,4 +1,4 @@
-package com.zjm.hello;
+package com.zjm.reflect;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -7,7 +7,7 @@ public class MainTest {
 	public static void main(String[] args) {
 		AtomicInteger a = new AtomicInteger();
 		int update = 1;
-		int expect = update + 1;
+		int expect =  2;
 		boolean flg = a.compareAndSet(update, expect);
 		System.out.println(flg);
 

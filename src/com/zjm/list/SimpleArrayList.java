@@ -52,6 +52,7 @@ public class SimpleArrayList<T> {
 	}
 
 	private void isCapacityEnough() throws OutOfMemoryError {
+		
 		if(size > DEAULT_CAPACITY){
 			explicitCapacity();
 		}
@@ -61,6 +62,9 @@ public class SimpleArrayList<T> {
 		}
 	}
 
+	/**
+	 * Ã÷È·ÈÝÁ¿
+	 */
 	private void explicitCapacity() {
 		int newLength = elementData.length * 2;
 		if(newLength - size < 0){
@@ -110,6 +114,12 @@ public class SimpleArrayList<T> {
 		list.add("String11");
 		
 		System.out.println(list.size());
+		
+		//ArrayList
+		
+		//HashSet	TreeSet
+		
+		
 	}
 }
 
